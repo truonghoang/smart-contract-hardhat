@@ -18,6 +18,6 @@
     "deploy:local" : "npx hardhat node",
     "coverage" : "npx hardhat coverage",
     "ignition": "npx hardhat ignition deploy ignition/modules/Voting.ts --network localhost",
-    "submodule": "git submodule add https://github.com/truonghoang/client-voting-smart-contract.git client-voting"
+    "submodule": "git submodule update --init --recursive "
   }
 }
