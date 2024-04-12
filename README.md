@@ -56,3 +56,26 @@ npx hardhat ignition deploy ./ignition/modules/Voting.ts
 
 note :  nằm ngoài phạm vi an toàn của js :nếu loại nằm trong phạm vi an toàn của JavaScript (tức là dưới 53 bit, chẳng hạn như int24 hoặc uint48), thì số JavaScript bình thường sẽ được sử dụng Nếu không thì BigNumber sẽ được trả về
 
+# RUN PROJECT
+
+- step 1: install submodule : npm  run submodule
+- step 2: install node_module: npm run all ( must install npm-run-all package -g if not already installed : npm install -g npm-run-all)
+- step 3: compile code smart-contract : npm run compile-smc
+- step 4: deploy network local : npm run deploy:local 
+- step 5: ignition smart contract to local blockchain : npm run ignition
+- step 6: run dev client:  npm run dev
+Note :  use  MetaMask wallet , setup local blockchain into MetaMask wallet to use method transactions
+
+how to setup localnetwork:
+
+- step 1 : open metamask wallet extension
+- step 2: open " Choose network(chọn mạng) " in left-top popup metamask wallet and add network(thêm mạng)
+- step 3: choose " Add networks manually(thêm mạng thủ công)"
+- step 4: add name network, urlRPC: ( http://127.0.0.1:8545/ or RPC when run command npm run deploy:local) ,ID chain: 31337
+- step 5: save networks settings
+
+add account blockchain local into metamask:
+
+- step 1: open metamask wallet extension
+- step 2 : add new account
+- step 3: choose privateKey 1/10 account on command when npm run deploy:local and save
