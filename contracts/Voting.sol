@@ -116,7 +116,7 @@ contract Voting {
             timestamp: timestamp,
             rating: rating
         });
-
+        
         productFeedBacks[msg.sender][productId] = newProductFeedBack;
 
         RateProduct memory rateProduct = rateProducts[productId]; // Lấy tham chiếu đến RateProduct từ mapping

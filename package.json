@@ -10,7 +10,7 @@
   },
   "scripts": {
     "client":"cd client-voting && npm install ",
-    "dev": "cd client && npm run dev",
+    "dev": "cd client-voting && npm run dev",
     "chain": "npm install",
     "all": "npm-run-all -p chain client",
     "compile-smc": "npx hardhat compile",
