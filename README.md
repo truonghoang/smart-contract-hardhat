@@ -1,20 +1,10 @@
-# Sample Hardhat Project
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Voting.ts
-```
 # TECHNICAL
 - hardhat
 - react/nextjs
 - etherjs
-- server node
-- database mysql
+- server node (pending)
+- database mysql (pending)
 # cách thức sử dụng và tối ưu
 - cách 1: lưu thông tin người dùng và sản phẩm trên db tập trung và lưu product(id,vote,total vote,) và user (addressUser,) comment(productId,addressUser,comment) trên phi tập trung
 - cách 2: lưu toàn bộ trên blockchain
